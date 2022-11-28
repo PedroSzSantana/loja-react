@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const getProducts = (state)=>{
+export const getProducts = async(state)=>{
     axios.get('https://fakestoreapi.com/products')
     .then((response)=>{
         state(response.data)

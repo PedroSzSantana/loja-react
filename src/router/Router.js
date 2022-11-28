@@ -3,6 +3,8 @@ import Home from "../pages/home/Home";
 
 
 export const Router=()=>{
+    
+    
     return(
         <BrowserRouter>
             <Routes>

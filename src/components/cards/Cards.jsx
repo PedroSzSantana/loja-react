@@ -1,19 +1,12 @@
-import { useEffect, useState } from "react"
-import { getProducts } from "../../assets/api"
+import { useState } from "react"
 import { StyleCards } from "./StyleCards"
 
-
-
-export const Cards = ()=>{
-    const [products, setProducts] = useState([])
-    
-    useEffect(()=>{
-        getProducts(setProducts)
-    },[])
-
+export const Cards = (state)=>{
+    const [produtos, setProdutos] = useState([])
+    setProdutos(state)
     return(
         <StyleCards>
-           {products.map((item)=>{
+           {produtos.map((item)=>{
                 return(
                     <div className='cards'>
                         <img src={item.image}/>

@@ -6,7 +6,7 @@ export const StyleCards = styled.section`
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
 
         .cards{
@@ -29,6 +29,6 @@ export const StyleCards = styled.section`
             }
         }
         .cards:hover{
-            border: 0.5px solid rgb(156, 156, 156);
+            
         }
 `

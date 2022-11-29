@@ -1,15 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    value: 'Home',
-    value2: {},
+    Products: 'Home',
+    Filtro: {},
 }
 export const conterSlice = createSlice({
     name: "Products",
     initialState,
     reducers: {
         getProducts: (state, action) =>{
-            state.value2 = action.payload
+            state.Products = action.payload
         }
     }
 })
